@@ -115,3 +115,19 @@ inline fun <reified T> NBTTagCompound.setList(name: String, list: List<T>) {
  * }
  */
 operator fun NBTTagCompound.contains(key: String) = hasKey(key)
+
+operator fun NBTTagCompound.iterator() =
+    object : Iterator<Pair<String, NBTBase>> {
+        val keys = this@iterator.keySet.iterator()
+        override fun hasNext() = keys.hasNext()
+        override fun next(): Pair<String, NBTBase> {
+            val next = keys.next()
+            return next to this@iterator[next]
+        }
+    }
+
+val NBTTagList.size
+    get() = tagCount()
+
+val NBTTagList.indices
+    get() = 0 until size

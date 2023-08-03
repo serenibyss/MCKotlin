@@ -5,6 +5,8 @@ import net.minecraft.client.resources.I18n
 
 class ClientProxy: CommonProxy() {
 
+    override fun canLocalize(key: String) = I18n.hasKey(key)
+
     override fun localize(key: String, vararg args: Any): String = I18n.format(key, args)
 
     override fun preInit() {
