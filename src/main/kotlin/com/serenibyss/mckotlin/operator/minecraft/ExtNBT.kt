@@ -35,12 +35,12 @@ val tagTypes = arrayListOf(
     Byte::class.java to 1,
     Short::class.java to 2,
     Int::class.java to 3,
-    Integer::class.java to 3,
     Long::class.java to 4,
     Float::class.java to 5,
     Double::class.java to 6,
     ByteArray::class.java to 7,
     String::class.java to 8,
+    NBTTagList::class.java to 9,
     NBTTagCompound::class.java to 10,
     IntArray::class.java to 11
 )
