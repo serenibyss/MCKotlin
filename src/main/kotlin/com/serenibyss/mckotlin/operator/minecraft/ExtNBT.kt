@@ -1,5 +1,5 @@
 @file:Suppress("unused")
-@file:JvmName("NBTTagCompoundUtils")
+@file:JvmName("NBTUtils")
 
 package com.serenibyss.mckotlin.operator.minecraft
 
