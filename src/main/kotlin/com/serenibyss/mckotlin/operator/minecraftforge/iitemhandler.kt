@@ -1,3 +1,6 @@
+@file:Suppress("unused")
+@file:JvmName("IItemHandlerUtils")
+
 package com.serenibyss.mckotlin.operator.minecraftforge
 
 import net.minecraft.item.ItemStack

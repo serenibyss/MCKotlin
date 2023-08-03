@@ -2,6 +2,7 @@ package com.serenibyss.mckotlin.adapter
 
 import net.minecraftforge.fml.relauncher.IFMLCallHook
 
+@Suppress("unused")
 class KotlinCallHook: IFMLCallHook {
 
     override fun injectData(data: Map<String, Any>?) {
