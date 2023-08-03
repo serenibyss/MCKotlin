@@ -1,0 +1,12 @@
+[{
+    "modid": "${modid}",
+    "name": "${modname}",
+    "description": "Kotlin adapter and language tools for Minecraft 1.12.2",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "logoFile": "",
+    "url": "",
+    "authorList": ["serenibyss"],
+    "credits": "Forgelin for the initial call hook/plugin/adapter impl",
+    "dependencies": []
+}]
